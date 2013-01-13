@@ -1,4 +1,11 @@
 WsBlog::Application.routes.draw do
+  devise_for :admins
+
+  resources :blogs
+
+  root :to => 'blogs#index'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
