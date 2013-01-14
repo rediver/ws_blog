@@ -1,10 +1,9 @@
-# before_filter :signed_in_user, only: [:edit, :update]  
-# before_filter :correct_user, only: [:edit, :update] 
-
+# before_filter :authenticate_user!,:authorize_user!
 
 class BlogsController < ApplicationController
-respond_to :html,:xml,:json 
+before_filter :authenticate_user!
 
+respond_to :html,:xml,:json 
   def index
     @blogs = Blog.all
     respond_with(@blogs) 
@@ -56,10 +55,19 @@ respond_to :html,:xml,:json
     @blog = Blog.find(params[:id])
     @blog.destroy
 
+    redirect_to admin_posts_url, :notice => "Successfully destroyed post."
+
     respond_to do |format|
       format.html { redirect_to blogs_url }
       format.json { head :no_content }
     end
   end 
+
+private
+  
+  def authorize_user!
+      redirect_to root_path, :notice => 'Access denied!' unless current_user.admin?
+  end
+
 end
 
