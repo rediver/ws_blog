@@ -1,7 +1,7 @@
 # before_filter :authenticate_user!,:authorize_user!
-
 class BlogsController < ApplicationController
-before_filter :authenticate_user!
+
+before_filter :authenticate_admin!, only: [:edit, :update, :new, :create, :destroy]
 
 respond_to :html,:xml,:json 
   def index

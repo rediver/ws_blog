@@ -10,16 +10,24 @@
   </tr>
 
 <% @blogs.each do |blog| %>
+  
   <tr>
+    
     <td><%= blog.title %></td>
     <td><%= blog.content %></td>
+
+<% if admin_signed_in? %>       
+    
     <td><%= link_to 'Show', blog %></td>
     <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-    <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>        
+
+<% end %>
+
   </tr>
+
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Post', new_blog_path %>
