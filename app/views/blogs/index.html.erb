@@ -1,16 +1,52 @@
 <%= render 'header' %>
 
 <% @blogs.each do |blog| %>  
-    
-  <div class="post">
-    
-      <div class="post-title">
-      <td><%= blog.title %></td>
-      </div>
 
-      <div class="post-content">
-      <td><%= blog.content %></td>   
-      </div>
+    <!--start content-->
+    <div id="content-wrapper">
+    
+        <section class="pages clearfix">
+        
+          <!--start section title-->
+            <div id="section-title">
+                <h1>Nihilizm</h1>
+                <h1>cynizm, sarkazm</h1>
+                <h1>orgazm & IT</h1>
+            </div>
+            
+          <!--start content left-->
+            <div class="content-inner-left">
+       
+                    <article class="blog-post">
+                          
+                          <div class="blog-post-content">
+                          
+                          <div class="blog-post-featured-media">
+                               
+                               <div class="thumb">
+                                    <a href="#" data-logo="assets/rails.png">
+                                        <img src="assets/rails.png" alt="" />
+                                    </a>
+                                </div> 
+
+                          </div>
+
+                            <h2 class="blog-post-title"><%= blog.title %></h2><br />
+                            <p>
+                            <%= blog.content %>
+                            </p>
+                            <!-- <a class="readMore" href="#">Read More &rarr;</a>  -->
+
+                        </div>
+
+                  </article>       
+                 
+                </div>  
+                
+            </div>
+            <!--end blog content-->
+        </section>
+    </div>
 
   </div>  
 

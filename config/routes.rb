@@ -7,15 +7,11 @@ WsBlog::Application.routes.draw do
   devise_scope :admin do 
     get 'login', to: 'devise/sessions#new', as: :login
     get 'logout', to: 'devise/sessions#destroy', as: :logout  
-  end   
+  end  
 
-  resources :blogs
-
-  devise_for :admins
   resources :blogs
 
   root :to => 'blogs#index'
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

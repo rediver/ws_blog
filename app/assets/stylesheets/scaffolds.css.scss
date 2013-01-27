@@ -5,8 +5,11 @@
 body {
   background-image: url("cartographer.png");
   background-repeat: repeat;
-  background-size: 500px;
   font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 #header {
@@ -40,10 +43,15 @@ body {
 }
 
 .post-title {
-  padding: 20px 0px;
+  margin-top: -40px !important;
   font-size: 35px;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
+  width: 750px; 
+  padding: 0px -20px !important;
+  color: #fff;
+  height: auto;
+  background-color: #000;
 }
 
 .post-content {
@@ -67,5 +75,10 @@ body {
   float: left;
   margin-left: 8%;
   margin-top: 30px;
+  font-family:  'Ubuntu', sans-serif;
+  font-weight: 700;
 }
 
+.post-time {
+  padding: 10px 0;
+}
