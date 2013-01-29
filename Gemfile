@@ -10,6 +10,7 @@ gem 'sqlite3'
 # MY ADDONS ##################
 
 gem 'devise'
+gem 'carrierwave'
 
 group :development do
   gem "better_errors"

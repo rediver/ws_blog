@@ -24,8 +24,10 @@
                           <div class="blog-post-featured-media">
                                
                                <div class="thumb">
-                                    <a href="#" data-logo="assets/rails.png">
-                                        <img src="assets/rails.png" alt="" />
+                                    <a href="#">
+
+                                        <%= image_tag(@blog.picture_url, :width => 600) if @blog.picture.present? %>
+                                    
                                     </a>
                                 </div> 
 
