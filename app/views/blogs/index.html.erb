@@ -9,32 +9,26 @@
         
           <!--start section title-->
             <div id="section-title">
-                <h1>Nihilizm</h1>
-                <h1>cynizm, sarkazm</h1>
-                <h1>orgazm & IT</h1>
+                <h1>To jest</h1>
+                <h1>test, la la la</h1>
+                <h1></h1>
             </div>
             
           <!--start content left-->
             <div class="content-inner-left">
        
-                    <article class="blog-post">
-                          
-                          <div class="blog-post-content">
-                          
-                          <div class="blog-post-featured-media">
-                               
+                    <article class="blog-post">                
+                          <div class="blog-post-content">                    
+                            <div class="blog-post-featured-media">                
                                <div class="thumb">
                                     <a href="#">
-
-                                        <%= image_tag(blog.picture_url, :width => 600) if blog.picture.present? %>
-                                    
+                                        <%= image_tag(blog.picture_url, :width => 860) if blog.picture.present? %>
                                     </a>
                                 </div> 
-
                           </div>
 
                             <h2 class="blog-post-title"><%= blog.title %></h2><br />
-                            <p>
+                            <p class="blog-post-text">
                             <%= blog.content %>
                             </p>
                             <!-- <a class="readMore" href="#">Read More &rarr;</a>  -->

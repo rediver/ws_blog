@@ -1,5 +1,9 @@
 WsBlog::Application.routes.draw do
 
+  get "contact/index"
+
+  get "about/index"
+
   get "view/index"
 
   devise_for :admins

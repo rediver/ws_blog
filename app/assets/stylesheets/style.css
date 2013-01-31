@@ -32,7 +32,7 @@
 --------------------------------------------------------*/
 
 
-	body{background:#fff;font:13px/19px Arial, Helvetica, sans-serif; color:#999;}
+	body{background:#fff;font:13px/19px Arial, Helvetica, sans-serif; color:#707070;}
 	
 
 /*--------------------------------------------------------
@@ -72,7 +72,7 @@
 		#header-wrapper #header-inner header nav ul.navigation li:last-child{padding-right:0;}
 		#header-wrapper #header-inner header nav ul.navigation li a{font-family: 'Quicksand', sans-serif;color:#999; text-decoration:none;  padding: 5px 0;}
 		#header-wrapper #header-inner header nav ul.navigation li:hover .sub-menu{/*display:block;*/}
-		#header-wrapper #header-inner header nav ul.navigation li a:hover{color:#ff0000;}
+		#header-wrapper #header-inner header nav ul.navigation li a:hover{color:#000;}
 		#header-wrapper #header-inner header nav ul.navigation li a.active{color:#000;}
 		
 			/*sub menu*/
@@ -201,16 +201,17 @@
 		.blog-post-grid-content .blog-post-featured-media .thumb{width:260px;}
 		.blog-post-grid-content h2,.blog-post-grid-content h2 a{font-size:35px;line-height:30px; margin-bottom:0px;color:#000;}
 		.blog-post-grid-content .blog-post-meta{width:100%; float:left; color:#999;margin-bottom:10px; font-size:11px;}
+		.blog-post-text {font-size: 16px;}
 			
 	/*blog layout:standard*/
-	.content-inner-left{width:605px;float:left; margin:0 45px 0 0;}
-	.content-inner-right{width:605px;float:right; margin:0 0 0 45px;}
+	.content-inner-left{width:860px;float:left; margin:0 45px 0 0;}
+	.content-inner-right{width:860px;float:right; margin:0 0 0 45px;}
 		article.blog-post{margin-bottom:50px;padding-bottom:50px; overflow:hidden;border-bottom:1px solid #e6e6e6;}		
 		
 		/*content*/	
 		.blog-post-content{width:100%; float:left;}
 		.blog-post-content .blog-post-featured-media{width:860px; height:auto; float:left;margin-bottom:30px; overflow:hidden;position:relative;}
-		.blog-post-content .blog-post-featured-media .thumb{width:605px;}
+		.blog-post-content .blog-post-featured-media .thumb{width:860px;}
 		.blog-post-content h2, .blog-post-content h2 a{font-size:35px;line-height:30px; margin-bottom:0px;color:#000;}
 		.blog-post-content h2 a:hover{color:#ff0000;}
 		.blog-post-content .video{margin-bottom:30px;}
