@@ -1,6 +1,6 @@
 <%= render 'header' %>
 
-<% @blogs.each do |blog| %>  
+<% @posts.each do |post| %>  
 
     <!--start content-->
     <div id="content-wrapper">
@@ -26,14 +26,14 @@
                             <div class="blog-post-featured-media">                
                                <div class="thumb">
                                     <a href="#">
-                                        <%= image_tag(blog.picture_url, :width => 860) if blog.picture.present? %>
+                                        <%= image_tag(post.picture_url, :width => 860) if post.picture.present? %>
                                     </a>
                                 </div> 
                             </div>
 
-                            <h2 class="blog-post-title"><%= blog.title %></h2><br />
+                            <h2 class="blog-post-title"><%= post.title %></h2><br />
                             <p class="blog-post-text">
-                            <%= blog.content %>
+                            <%= post.content %>
                             </p>
                             <!-- <a class="readMore" href="#">Read More &rarr;</a>  -->
 
@@ -51,9 +51,9 @@
   </div>  
 
 <% if admin_signed_in? %>        
-    <td><%= link_to 'Show', blog %></td>
-    <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-    <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>        
+    <td><%= link_to 'Show', post %></td>
+    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>        
 <% end %>
 
 <% end %>
