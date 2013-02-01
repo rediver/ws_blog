@@ -13,9 +13,9 @@ WsBlog::Application.routes.draw do
     get 'logout', to: 'devise/sessions#destroy', as: :logout  
   end  
 
-  resources :blogs
+  resources :posts
 
-  root :to => 'blogs#index'
+  root :to => 'posts#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
