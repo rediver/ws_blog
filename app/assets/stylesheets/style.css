@@ -599,5 +599,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 	height: auto;
 
 	margin-top: -75px;
-
 } 
+
+.footer-coint {
+	width: 860px;
+}
