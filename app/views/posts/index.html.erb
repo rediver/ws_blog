@@ -50,11 +50,16 @@
 
   </div>  
 
-<% if admin_signed_in? %>        
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>        
-<% end %>
+
+<div class="admin-options">
+    <% if admin_signed_in? %>        
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>        
+    <% end %>
+</div>
+
+
 
 <% end %>
 </table>

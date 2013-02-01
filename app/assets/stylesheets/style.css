@@ -586,3 +586,18 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 	.right{float:right !important;}
 	.last{margin:0 0 50px 0;}
 			
+.admin-options {
+	
+	font-family: 'Quicksand', sans-serif;
+	color: #000 !important;
+	font-size: 20px;
+	
+	margin: 0 auto; 
+	display: block;
+
+	width: 860px;
+	height: auto;
+
+	margin-top: -75px;
+
+} 
