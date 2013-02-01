@@ -21,20 +21,16 @@
 	1.RESETS & MISC
 --------------------------------------------------------*/
 	
-	
 	html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline; }
 	
 	header, nav, section, article, aside, footer {display:block;}
-	
 	
 /*--------------------------------------------------------
 	2.COMMONS
 --------------------------------------------------------*/
 
-
 	body{background:#fff;font:13px/19px Arial, Helvetica, sans-serif; color:#707070;}
 	
-
 /*--------------------------------------------------------
 	3.STRUCTURAL 
 --------------------------------------------------------*/
@@ -124,11 +120,15 @@
 	
 	/*section-title & teaser
 	----------------------------*/
-	#section-title{max-width:870px;padding-bottom:50px;margin:0 auto 50px auto; border-bottom:1px solid #eee;}
+	#section-title{max-width:870px;padding-bottom:50px;margin:0 auto 50px auto; border-bottom:1px solid #eee;font-family: 'Quicksand', sans-serif;}
 	#teaser{font:20px/30px Arial, Helvetica, sans-serif;color:#666;margin:0 auto 50px auto;}
-	
+				  
+	#section-title h1 {font-family: 'Fjalla One', sans-serif; line-height: 90px; }
+
 	/*homepage
 	----------------------------*/	
+
+
 		
 	/*grid*/
 	#content-wrapper section.homepage #grid{width:876px; overflow:hidden;margin-left:-6px; position:relative;z-index:1;}
@@ -201,7 +201,7 @@
 		.blog-post-grid-content .blog-post-featured-media .thumb{width:260px;}
 		.blog-post-grid-content h2,.blog-post-grid-content h2 a{font-size:35px;line-height:30px; margin-bottom:0px;color:#000;}
 		.blog-post-grid-content .blog-post-meta{width:100%; float:left; color:#999;margin-bottom:10px; font-size:11px;}
-		.blog-post-text {font-size: 16px;}
+		.blog-post-text {font-size: 15px;}
 			
 	/*blog layout:standard*/
 	.content-inner-left{width:860px;float:left; margin:0 45px 0 0;}
@@ -278,82 +278,6 @@
 		.blog-pagination ul li a:hover{border:1px solid #e70000;background:#e70000;color:#fff;}
 		.blog-pagination ul li a.active{background: #000; border:1px solid #000; color:#fff;}
 		.blog-pagination ul li a.active:hover{background: #666;border:1px solid #666;}
-		
-	/*sidebar*/	
-	aside.sidebar.left{width:220px; float:left;}
-	aside.sidebar.right{width:220px; float:right;}
-	
-		/*general styling*/
-		aside.sidebar ul{float:left;width:100%;list-style:none; margin:0;padding:0;}
-		aside.sidebar ul li{width:100%;float:left;margin-bottom:40px;padding-bottom:40px;border-bottom:1px solid #e6e6e6;}
-		aside.sidebar ul li:last-child{margin:0px;padding:0px;border:none !important;}
-		aside.sidebar ul li h6.widgettitle{font-size:20px; line-height:16px; margin-bottom:20px;}
-		aside.sidebar ul li h6.widgettitle, aside.sidebar ul li h6.widgettitle span{color:#999 !important;}
-		aside.sidebar ul li ul {list-style:none;}
-		aside.sidebar ul li ul li{border:none !important;}
-		aside.sidebar ul li ul li:last-child{margin:0 !important;}
-		aside.sidebar ul li ul li a{color:#333;text-decoration:none; font-weight:normal; width:100%;}
-		aside.sidebar ul li ul li a:hover{color:#e70000;text-decoration:underline;} 
-		aside.sidebar ul li ul li p.date{color:#999; font-size:11px;text-transform:uppercase;}
-		
-		/*widget:archives*/
-		aside.sidebar ul li.widget_archives ul li{margin-bottom:5px; padding:0; border:none;}
-		
-		/*widget:calender*/
-		aside.sidebar ul li.widget_calender table{width:100%;}
-		aside.sidebar ul li.widget_calender table th{text-align:left;}
-		
-		/*widget:categories*/
-		aside.sidebar ul li.widget_categories ul li{margin:0px; padding:0;border:none;}
-		
-		/*widget:meta*/
-		aside.sidebar ul li.widget_meta ul li{margin-bottom:5px; padding:0; border:none;}
-		
-		/*widget:link*/
-		aside.sidebar ul li.widget_links ul li{margin-bottom:5px; padding:0; border:none;}
-		
-		/*widget:meta*/
-		aside.sidebar ul li.widget_meta ul li{margin-bottom:5px; padding:0; border:none;}
-		
-		/*widget:pages*/
-		aside.sidebar ul li.widget_pages ul li{margin-bottom:5px; padding:0; border:none;}
-		
-		/*widget:recent posts*/
-		aside.sidebar ul li.widget_recent_entries ul li{margin-bottom:5px; padding:0; border:none;}
-		aside.sidebar ul li.widget_recent_entries ul li p{margin-bottom:0;}
-		
-		/*widget:recent comments*/
-		aside.sidebar ul li.widget_recent_comments ul li{margin-bottom:5px; padding:0; border:none;}		
-		
-		/*widget:search*/
-		aside.sidebar ul li.widget_search input[type=text].sidebar-searchform{width:100%;height:45px;line-height:45px;padding:0 20px;margin-bottom:20px;box-sizing: border-box; 
-  -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
-		aside.sidebar ul li.widget_search input[type=text].sidebar-searchform{background-color:#fff;color:#999;border:1px solid #e6e6e6; color:#999; font: 13px/18px Arial, Helvetica, sans-serif;}
-		aside.sidebar ul li.widget_search input[type=text].sidebar-searchform:hover{background-color:#fff;color:#999;border:1px solid #e6e6e6;}
-		aside.sidebar ul li.widget_search input[type=text].sidebar-searchform:focus{background-color:#fff;color:#999;border:1px solid #ddd;-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);}
-		
-		/*widget:tag cloud*/
-		aside.sidebar  ul li.widget_tag_cloud a{display: block; float: left;font-size: 12px !important;margin:0 10px 10px 0;padding: 3px 8px;}
-		aside.sidebar ul li.widget_tag_cloud a{background:#000; color:#eee !important;}
-		aside.sidebar ul li.widget_tag_cloud a:hover{background:#e70000; color:#fff !important;}
-		
-		/*widget:text*/
-		aside.sidebar ul li.widget_text ul li{margin-bottom:5px; padding:0; border:none;}
-		aside.sidebar ul li.widget_text p:last-child{margin-bottom:0px;}
-		
-			/*social*/
-			aside.sidebar ul li.widget_text ul.socialSmall {float:none; list-style:none;margin:0; overflow:hidden;display:table;}
-			aside.sidebar ul li.widget_text ul.socialSmall li{display:inline;width:auto; margin:0;}
-			aside.sidebar ul li.widget_text ul.socialSmall li a{width:22px;height:22px;}
-		
-		/*widget:twitter*/
-		aside.sidebar ul li.widget_twitter ul.tweet_list{margin:0;}
-		aside.sidebar ul li.widget_twitter ul.tweet_list li{margin-bottom:20px; overflow:hidden; border:none;padding:0;}
-		aside.sidebar ul li.widget_twitter ul.tweet_list li:last-child{margin-bottom:0;}
-		aside.sidebar ul li.widget_twitter ul.tweet_list li span.tweet_time{text-transform:uppercase;font-size:10px;margin-bottom:0px;float:left;}
-		aside.sidebar ul li.widget_twitter ul.tweet_list li span.tweet_time a{line-height:12px;color:#666; font-weight:bold;}
-		aside.sidebar ul li.widget_twitter ul.tweet_list li span.tweet_text{color:#999;float:left;}
-		aside.sidebar ul li.widget_twitter ul.tweet_list li span.tweet_text a{font-weight:normal;}
 		
 	
 	/*contact
@@ -439,8 +363,8 @@
 		#footer-wrapper #footer-top footer .column-footer-widget .widget_tag_cloud a:hover{background:#e70000; color:#fff !important;}
 		
 		/*widget:text*/
-		#footer-wrapper #footer-top footer .column-footer-widget .widget_text ul li{margin-bottom:5px; padding:0; border:none;}
-		#footer-wrapper #footer-top footer .column-footer-widget .widget_text p:last-child{margin-bottom:0px;}
+		#footer-wrapper #footer-top footer .column-footer-widget .widget_text ul li{margin-bottom:5px; padding:0 20px; border:none;}
+		#footer-wrapper #footer-top footer .column-footer-widget .widget_text p:last-child{margin-bottom:0px; padding:0 20px;}
 		#footer-wrapper #footer-top footer .column-footer-widget .widget_text img{margin-bottom:27px;}
 		
 			/*social*/
@@ -677,4 +601,3 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 	.right{float:right !important;}
 	.last{margin:0 0 50px 0;}
 			
-	
