@@ -66,7 +66,7 @@ private
 
 
   def feed 
-    @posts = Post.all(:select => "title,content", :order => "posted_at DESC", :limit => 20)    )
+    @posts = Post.all(:select => "title,content", :order => "posted_at DESC", :limit => 20)    
     
         respond_to do |format| 
           format.html 
