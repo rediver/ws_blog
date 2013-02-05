@@ -604,3 +604,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 .footer-coint {
 	width: 860px;
 }
+
+.about-me-img {
+	width: 860px; 
+	height: 500px;
+} 

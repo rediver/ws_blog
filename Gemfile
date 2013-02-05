@@ -5,9 +5,6 @@ gem 'rails', '3.2.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-gem 'pg'
-
 # MY ADDONS ##################
 
 gem 'devise'
@@ -16,7 +13,12 @@ gem 'carrierwave'
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
+  gem 'sqlite3'
 end
+
+group :production do 
+  gem 'pg'
+end   
 
 # Gems used only for assets and not required
 # in production environments by default.

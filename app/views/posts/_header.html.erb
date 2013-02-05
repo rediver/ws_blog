@@ -4,7 +4,7 @@
       <header>
              
               <div id="logo">
-                    <%= link_to image_tag("rails.png"), root_path %>
+                    <%= link_to image_tag("logo.png"), root_path %>
               </div>
                     
               <div class="mobileMenuToggle">
@@ -16,6 +16,8 @@
                             <li><%= link_to "Blog", root_path, :class => 'active' %></li> 
                             <li><%= link_to "About", about_index_path %></li>
                             <li><%= link_to "Contact", contact_index_path %></li>
+
+                            <%= auto_discovery_link_tag(:rss, "http://ww") %>
                   </ul>
               </nav>  
 

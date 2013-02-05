@@ -64,5 +64,16 @@ private
       redirect_to root_path, :notice => 'Access denied!' unless current_user.admin?
   end
 
+
+  def feed 
+    @posts = Post.all(:select => "title,content", :order => "posted_at DESC", :limit => 20)    )
+    
+        respond_to do |format| 
+          format.html 
+          format.rss (render :layout => false)
+        end  
+  end
+
+
 end
 
