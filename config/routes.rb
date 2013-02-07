@@ -15,6 +15,8 @@ WsBlog::Application.routes.draw do
 
   resources :posts
 
+  get 'feed' => 'posts#feed'
+
   root :to => 'posts#index'
 
   # The priority is based upon order of creation:

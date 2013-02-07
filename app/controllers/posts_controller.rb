@@ -58,21 +58,18 @@ respond_to :html,:xml,:json
     redirect_to posts_url, :notice => "Successfully destroyed post."
   end 
 
+  def feed
+    @posts = Post.all(:order => "created_at DESC", :limit => 20)
+    respond_to do |format|
+      format.rss
+    end
+  end
+
 private
-  
+
   def authorize_user!
-      redirect_to root_path, :notice => 'Access denied!' unless current_user.admin?
+    redirect_to root_path, :notice => 'Access denied!' unless current_user.admin?
   end
-
-
-  def feed 
-    @posts = Post.all(:select => "title,content", :order => "posted_at DESC", :limit => 20)               
-          respond_to do |format| 
-          format.html 
-          format.rss (render :layout => false)
-        end  
-  end
-
 
 end
 
