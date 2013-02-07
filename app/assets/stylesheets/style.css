@@ -609,3 +609,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 	width: 860px; 
 	height: 300px;
 } 
+
+.aboutme-content {
+	margin-top: 300px;
+}
