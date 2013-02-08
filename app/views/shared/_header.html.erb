@@ -1,0 +1,27 @@
+ <div id="header-wrapper">
+    <div id="header-inner">
+      
+      <header>         
+              <div id="logo">
+                <%= link_to image_tag("logo.png"), root_path %>
+              </div>
+                    
+              <div class="mobileMenuToggle">
+                <%= link_to "", "" %> 
+              </div>
+               
+                  <nav>
+                          <ul class="navigation">
+                                <li><%= link_to "Blog", root_path, :class => ("active" if current_page?(root_path)) %></li> 
+                                <li><%= link_to "O Mnie", about_index_path, :class => ("active" if current_page?(about_index_path))  %></li>
+                                <li><%= link_to "Kontakt", contact_index_path, :class => ("active" if current_page?(contact_index_path)) %></li>
+                                <li><%= link_to "RSS", "/feed.rss" %></li>                                    
+                          </ul>     
+                  </nav>   
+      </header>
+    
+    </div>
+</div>
+
+
+<%= render 'section-title' %>
