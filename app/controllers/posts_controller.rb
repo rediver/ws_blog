@@ -5,8 +5,8 @@ before_filter :authenticate_admin!, only: [:edit, :update, :new, :create, :destr
 
 respond_to :html,:xml,:json 
   def index
-    @posts = Post.all
-    respond_with(@posts) 
+    @posts = Post.order("created_at DESC")
+    respond_with(@posts)
   end
 
   def show

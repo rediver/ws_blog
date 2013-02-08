@@ -1,69 +1,54 @@
 <%= render 'shared/header' %>
 
-<% @posts.each do |post| %>  
+<% @posts.each do |post| %>
 
-    <!--start content-->
-    <div id="content-wrapper">
-    
-            <!-- 
-            <div id="section-title">
-                <h1>To jest</h1>
-                <h1>test, la la la</h1>
-                <h1></h1>
-            </div> -->
+<!--start content-->
+<div id="content-wrapper">
+<section class="pages clearfix">
 
+    <!--start section title-->
 
-        <section class="pages clearfix">
-        
-          <!--start section title-->
-            
-            
-          <!--start content left-->
-            <div class="content-inner-left">
-       
-                    <article class="blog-post">                
-                          <div class="blog-post-content">                    
-                            <div class="blog-post-featured-media">                
-                               <div class="thumb">
-                                    <a href="#">
-                                        <%= image_tag(post.picture_url, :width => 860) if post.picture.present? %>
-                                    </a>
-                                </div> 
-                            </div>
+    <!--start content left-->
+    <div class="content-inner-left">
 
-                            <h2 class="blog-post-title"><%= post.title %></h2><br />
-                            <p class="blog-post-text">
-                            <%= post.content %>
-                            </p>
-                            <!-- <a class="readMore" href="#">Read More &rarr;</a>  -->
-                            <%= render 'shared/social-media' %>
+        <article class="blog-post">
+            <div class="blog-post-content">
+                <div class="blog-post-featured-media">
+                    <div class="thumb">
+                        <a href="#">
+                            <%= image_tag(post.picture_url, :width =>860) if post.picture.present? %></a>
+                    </div>
+                </div>
 
-                        </div>
+                <h2 class="blog-post-title">
+                    <%= post.title %></h2>
+                <br />
+                <p class="blog-post-text">
+                    <%= truncate(post.content, :length => 500) %></p>
+                    <%= link_to(raw("Read More &rarr;"), post) %>
+        </div>
 
-                  </article>       
-                 
-                </div>  
-                
-            </div>
-            <!--end blog content-->
-        </section>
-    </div>
+    </article>
 
-  </div>  
-
-
-<div class="admin-options">
-    <% if admin_signed_in? %>        
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Jestes pewien?' } %></td>        
-    <% end %>
 </div>
 
+</div>
+<!--end blog content-->
+</section>
+</div>
 
+</div>
 
-<% end %>
-</table>
+<div class="admin-options">
+<% if admin_signed_in? %>
+<td>
+<%= link_to 'Show', post %></td>
+<td>
+<%= link_to 'Edit', edit_post_path(post) %></td>
+<td>
+<%= link_to 'Delete', post, method: :delete, data: { confirm: 'Jestes pewien?' } %></td>
+<% end %></div>
+
+<% end %></table>
 
 <br />
-
