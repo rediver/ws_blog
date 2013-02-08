@@ -1,15 +1,29 @@
-<p id="notice"><%= notice %></p>
+<%= render 'shared/header' %>
 
-<p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
+<div id="content-wrapper">
+  <section class="pages clearfix">
 
-<p>
-  <b>Content:</b>
-  <%= @post.content %>
-</p>
+    <!--start section title-->
 
+    <!--start content left-->
+    <div class="content-inner-left">
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+      <article class="blog-post">
+          
+          <div class="blog-post-content">
+
+          <h2 class="blog-post-title">
+          <%= @post.title %></h2>         
+          <br />
+          <p class="blog-post-text">
+          <%= @post.content %>
+        
+        </div>
+
+        </article>
+
+        <%= render 'shared/social-media' %> 
+
+      </div>
+
+    </div>
