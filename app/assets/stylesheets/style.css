@@ -613,3 +613,17 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 .aboutme-content {
 	margin-top: 300px;
 }
+
+.logo-text { 
+margin-top: 37px;	
+width: 350px;
+font-family: 'Open Sans', sans-serif; 
+font-weight: 300;
+font-size: 25px;
+color: #000;
+}
+
+.logo-text span {
+	font-family: 'Yellowtail', cursive;
+
+}

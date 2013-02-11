@@ -29,6 +29,7 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     arel (3.0.2)
+    aws_cf_signer (0.1.1)
     bcrypt-ruby (3.0.1)
     better_errors (0.5.0)
       coderay (>= 1.0.0)
@@ -38,6 +39,9 @@ GEM
     carrierwave (0.8.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
+    cloudinary (1.0.44)
+      aws_cf_signer
+      rest-client
     coderay (1.0.8)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -96,6 +100,8 @@ GEM
     rake (10.0.3)
     rdoc (3.12)
       json (~> 1.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     sass (3.2.5)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -126,6 +132,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   carrierwave
+  cloudinary
   coffee-rails (~> 3.2.1)
   devise
   friendly_id

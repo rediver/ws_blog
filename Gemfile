@@ -10,6 +10,7 @@ gem 'rails', '3.2.11'
 gem 'devise'
 gem 'carrierwave'
 gem 'friendly_id'
+gem 'cloudinary'
 
 group :development do
   gem "better_errors"
