@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.11'
+gem 'rails', '3.2.12'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -11,6 +11,7 @@ gem 'devise'
 gem 'carrierwave'
 gem 'friendly_id'
 gem 'cloudinary'
+gem 'nested_form'
 
 group :development do
   gem "better_errors"
