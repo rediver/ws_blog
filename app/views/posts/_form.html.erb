@@ -1,4 +1,4 @@
-<%= form_for(@post, :html => { :multipart => true }) do |f| %>
+<%= nested_form_for(@post, :html => { :multipart => true }) do |f| %>
 
   <% if @post.errors.any? %>
     <div id="error_explanation">
@@ -19,10 +19,17 @@
     <%= f.label :content %><br />
     <%= f.text_area :content %>
   </div>
+
+  <%= f.fields_for :photos do |photo_form| %>
+      <%= photo_form.file_field :url %>
+    <%= photo_form.link_to_remove "Remove this photo" %>
+  <% end %>
+  <p><%= f.link_to_add "Add a photo", :photos %></p>
+
+
   <div class="actions">
     <%= f.submit %>
   </div>
 
-  <%= f.file_field :picture %>
 
 <% end %>
