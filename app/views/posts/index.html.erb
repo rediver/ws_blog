@@ -23,7 +23,7 @@
                     <%= post.title %></h2>
                 <br />
                 <p class="blog-post-text">
-                    <%= truncate(post.content, :length => 500) %></p>
+                    <%= raw(truncate(post.content, :length => 500)) %></p>
                     <%= link_to(raw("Read More &rarr;"), post) %>
         </div>
 
