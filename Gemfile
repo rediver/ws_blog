@@ -10,7 +10,7 @@ gem 'friendly_id', '>= 4.0.9'
 gem 'cloudinary', '>= 1.0.44'
 gem 'nested_form', '>= 0.3.1'
 gem 'jquery-rails', '~> 2.2.1'
-gem 'tinymce-rails'
+gem 'tinymce-rails', '~> 3.5.8'
 
 group :development do
   gem 'better_errors'
