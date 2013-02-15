@@ -5,7 +5,7 @@ class Post < ActiveRecord::Base
   extend FriendlyId
   friendly_id :title, use: :slugged
 
-  has_many :photos
+  has_many :photos, :dependent => :destroy
   accepts_nested_attributes_for :photos
   attr_accessible :photos_attributes
 end
