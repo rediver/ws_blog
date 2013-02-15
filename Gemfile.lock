@@ -134,13 +134,13 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
-  carrierwave
-  cloudinary
+  carrierwave (>= 0.8.0)
+  cloudinary (>= 1.0.44)
   coffee-rails (~> 3.2.1)
-  devise
-  friendly_id
-  jquery-rails
-  nested_form
+  devise (>= 2.2.3)
+  friendly_id (>= 4.0.9)
+  jquery-rails (~> 2.2.1)
+  nested_form (>= 0.3.1)
   pg
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)
