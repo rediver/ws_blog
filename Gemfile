@@ -12,6 +12,7 @@ gem 'carrierwave'
 gem 'friendly_id'
 gem 'cloudinary'
 gem 'nested_form'
+gem 'tinymce-rails', '~> 3.5.8'
 
 group :development do
   gem "better_errors"
