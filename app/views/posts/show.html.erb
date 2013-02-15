@@ -12,17 +12,20 @@
           
         <div class="blog-post-content">    
 
-          <%= cl_image_tag(@first_photo.url)%>
+          <%= cl_image_tag(@first_photo.url) %>
 
+          <br /><br /><br />
           <h2 class="blog-post-title">
           <%= @post.title %></h2>         
           <br />
           <p class="blog-post-text">
           <%= raw(@post.content) %>
         
+        <br /><br />
         <% @rest_photos.each do |photo| %> 
             <%=  cl_image_tag(photo.url) %>
         <% end %>  
+
 
         </div>
 
