@@ -9,7 +9,6 @@ gem 'carrierwave', '>= 0.8.0'
 gem 'friendly_id', '>= 4.0.9'
 gem 'cloudinary', '>= 1.0.44'
 gem 'nested_form', '>= 0.3.1'
-gem 'tinymce-rails', '~> 3.5.8'
 gem 'jquery-rails', '~> 2.2.1'
 
 group :development do
