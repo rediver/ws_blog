@@ -15,8 +15,7 @@
             <div class="blog-post-content">
                 <div class="blog-post-featured-media">
                     <div class="thumb">
-                        
-                             <%= cl_image_tag(post.photos.first.url)%>
+                             <%= cl_image_tag(post.photos.first.url) if posts.photos.size > 0 %>
                     </div>
                 </div>
 
