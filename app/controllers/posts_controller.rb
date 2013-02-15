@@ -5,12 +5,15 @@ before_filter :authenticate_admin!, only: [:edit, :update, :new, :create, :destr
 
 respond_to :html,:xml,:json 
   def index
-    @posts = Post.order("created_at DESC")
+    @posts = Post.includes(:photos).order("created_at DESC")
     respond_with(@posts)
+
   end
 
   def show
     @post = Post.find(params[:id])
+    photos = @post.photos
+    @first_photo, *@rest_photos = photos
     respond_with(@post) 
   end
 

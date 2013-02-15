@@ -15,8 +15,8 @@
             <div class="blog-post-content">
                 <div class="blog-post-featured-media">
                     <div class="thumb">
-                        <a href="#">
-                            <%= image_tag(post.picture_url, :width =>860) if post.picture.present? %></a>
+                        
+                             <%= cl_image_tag(post.photos.first.url)%>
                     </div>
                 </div>
 
