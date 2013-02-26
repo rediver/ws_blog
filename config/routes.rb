@@ -1,6 +1,7 @@
 WsBlog::Application.routes.draw do
 
-  get 'tags/:tag', to: 'posts#show', as: :tag
+  get 'tags/:tag', to: 'posts#tags', as: :tag
+
   get 'contact' => 'contact#index'
   get 'about' => 'about#index'
   get 'view' => 'view#index'

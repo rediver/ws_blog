@@ -8,5 +8,5 @@ class Post < ActiveRecord::Base
   has_many :photos, :dependent => :destroy
   accepts_nested_attributes_for :photos
   attr_accessible :photos_attributes
-  acts_as_taggable     
+  acts_as_taggable
 end
