@@ -27,6 +27,9 @@
             <%=  cl_image_tag(photo.url) %>
         <% end %>  
 
+          <p>
+            Tags: <%= raw(@post.tag_list.map { |t| link_to t, tag_path(t)}.join(",")) %>
+          </p>
 
         </div>
 

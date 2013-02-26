@@ -11,6 +11,7 @@ gem 'cloudinary', '>= 1.0.44'
 gem 'nested_form', '>= 0.3.1'
 gem 'jquery-rails', '~> 2.2.1'
 gem 'tinymce-rails', '~> 3.5.8'
+gem 'acts-as-taggable-on', '~> 2.3.1'
 
 group :development do
   gem 'better_errors'

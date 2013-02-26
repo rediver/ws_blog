@@ -11,10 +11,18 @@ respond_to :html,:xml,:json
   end
 
   def show
+
+    if params[:tag]
+        @post = Post.find(params[:id]).tagged_with(params[:tags]) 
+    else 
+        @post = Post.find(params[:id])
+    end
+
     @post = Post.find(params[:id])
     photos = @post.photos
     @first_photo, *@rest_photos = photos
     respond_with(@post) 
+    
   end
 
   def new
